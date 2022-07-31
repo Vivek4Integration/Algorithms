@@ -68,6 +68,8 @@
     <Compile Include="Algoriths\SongTests.cs" />
     <Compile Include="Algoriths\SortArrayTests.cs" />
     <Compile Include="ObjectOrientedProgramming\OptimizedDiskCacheTests.cs" />
+    <Compile Include="Problem\PathExistsTests.cs" />
+    <Compile Include="Problem\PathExistsUsingGenericTests.cs" />
     <Compile Include="Problem\ProvinceTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
