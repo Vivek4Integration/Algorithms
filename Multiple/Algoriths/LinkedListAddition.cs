@@ -24,12 +24,14 @@ namespace Multiple.Algoriths
             var c = value / 10;
             var output = new LinkedListItem(value%10);
 
-            if (l1.NextNode != null || l2.NextNode != null)
+            if (l1.NextNode != null || l2.NextNode != null||c!=0)
             {
                 if (l1.NextNode == null)
                     l1.NextNode = new LinkedListItem(0);
                 if(l2.NextNode == null)
                     l2.NextNode = new LinkedListItem(0);
+                if (l1.NextNode == null && l2.NextNode == null && c != 0)
+                    l2.NextNode = new LinkedListItem(c);
                 output.NextNode = AddTwoNumber(l1.NextNode, l2.NextNode, c);
                 
             }
@@ -42,7 +44,7 @@ namespace Multiple.Algoriths
             var b = l2;
             LinkedListItem output =  null, current = null;
 
-            while(a!=null || b!= null)
+            while(a!=null || b!= null||carry!=0)
             {
                 var val = a.Value + b.Value + carry;
                 carry = val / 10;
@@ -54,15 +56,16 @@ namespace Multiple.Algoriths
                     current = current.NextNode;
                 }
 
-                if (a.NextNode != null || b.NextNode != null)
+                if (a.NextNode != null || b.NextNode != null||carry!=0)
                 {
                     if (a.NextNode == null)
                         a.NextNode = new LinkedListItem(0);
 
                     if (b.NextNode == null)
                         b.NextNode = new LinkedListItem(0);
+                    if (a.NextNode == null && b.NextNode == null && carry != 0)
+                        b.NextNode = new LinkedListItem(carry);
 
-                    
                 }
                 a = a.NextNode;
                 b = b.NextNode;
