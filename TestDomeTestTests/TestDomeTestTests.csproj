@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5FD0B647-5FA3-44ED-8323-2674D350EA7C}</ProjectGuid>
+    <ProjectGuid>{150AE63D-64B5-4978-B891-B4CC21AFEA53}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MultipleTests</RootNamespace>
-    <AssemblyName>MultipleTests</AssemblyName>
+    <RootNamespace>TestDomeTestTests</RootNamespace>
+    <AssemblyName>TestDomeTestTests</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -56,73 +56,17 @@
     <Otherwise />
   </Choose>
   <ItemGroup>
-    <Compile Include="Algoriths\BSTValidatorTests.cs" />
-    <Compile Include="Algoriths\Graph\DisjointSetPathCompressionTests.cs" />
-    <Compile Include="Algoriths\Graph\DisjointSetQuickUnionTests.cs" />
-    <Compile Include="Algoriths\Graph\DisjointSetTests.cs" />
-    <Compile Include="Algoriths\Graph\DisjointSetUnionByRankTests.cs" />
-    <Compile Include="Algoriths\LeastAndMaxIndicesTests.cs" />
-    <Compile Include="Algoriths\LinkedListAdditionTests.cs" />
-    <Compile Include="Algoriths\PermutationsTests.cs" />
-    <Compile Include="Algoriths\RansomNoteTests.cs" />
-    <Compile Include="Algoriths\SongTests.cs" />
-    <Compile Include="Algoriths\SortArrayTests.cs" />
-    <Compile Include="ObjectOrientedProgramming\OptimizedDiskCacheTests.cs" />
-    <Compile Include="Problem\AllPathwithBFSTests.cs" />
-    <Compile Include="Problem\AverageSalaryTests.cs" />
-    <Compile Include="Problem\BinarySearchTree_ValueExistsTests.cs" />
-    <Compile Include="Problem\ClimbingStairsTests.cs" />
-    <Compile Include="Problem\CostClimbingStairsTests.cs" />
-    <Compile Include="Problem\CourseScheduleTests.cs" />
-    <Compile Include="Problem\CyclicWordTests.cs" />
-    <Compile Include="Problem\DeleteAndEarnTests.cs" />
-    <Compile Include="Problem\DirectedAcyclicGraphTests.cs" />
-    <Compile Include="Problem\DirectedAcyclic_OthersSolutionTests.cs" />
-    <Compile Include="Problem\DPRobHouseTests.cs" />
-    <Compile Include="Problem\emailTests.cs" />
-    <Compile Include="Problem\EvaluateBooleanTreeTests.cs" />
-    <Compile Include="Problem\FromLastIndexTests.cs" />
-    <Compile Include="Problem\LargestProductTests.cs" />
-    <Compile Include="Problem\LengthOfSubstringWithKDistinctTests.cs" />
-    <Compile Include="Problem\LongestPalindromeTests.cs" />
-    <Compile Include="Problem\LongestSubstring2CharTests.cs" />
-    <Compile Include="Problem\LongestSubstringSequenceTests.cs" />
-    <Compile Include="Problem\LongestUniqueSequenceTests.cs" />
-    <Compile Include="Problem\MaximumAreaTests.cs" />
-    <Compile Include="Problem\MaxPathSumTests.cs" />
-    <Compile Include="Problem\MedianOfTwoSortedArrayTests.cs" />
-    <Compile Include="Problem\MergeIntervalsTests.cs" />
-    <Compile Include="Problem\MinCoinDenominationTests.cs" />
-    <Compile Include="Problem\MissingRangesTests.cs" />
-    <Compile Include="Problem\NodeBFSTests.cs" />
-    <Compile Include="Problem\PathExistsTests.cs" />
-    <Compile Include="Problem\PathExistsUsingGenericTests.cs" />
-    <Compile Include="Problem\PathExistUsingBFSTests.cs" />
-    <Compile Include="Problem\ProvinceTests.cs" />
-    <Compile Include="Problem\RemoveMDigitTests.cs" />
-    <Compile Include="Problem\SimplifiedPathTests.cs" />
-    <Compile Include="Problem\SumToAValueTests.cs" />
-    <Compile Include="Problem\TribonacciTests.cs" />
-    <Compile Include="Problem\TwoSumTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestProblemTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Multiple\Multiple.csproj">
-      <Project>{DDF0BB68-D3C0-4B58-8E14-3CD1EE88FF00}</Project>
-      <Name>Multiple</Name>
+    <ProjectReference Include="..\TestDomeTest\TestDomeTest.csproj">
+      <Project>{B03A2493-C813-4B29-A87C-7FAD1DE57796}</Project>
+      <Name>TestDomeTest</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup />
-  <ItemGroup>
-    <Content Include="Files\Extract.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Files\FullArticle.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
